@@ -11,15 +11,15 @@
 
 <!--Character's Pernonal Date-->
 
-<section class=""><h1>Dados Pessoais</h1>
+<section class="personal"><h1>Dados Pessoais</h1>
     <br>
-    <form>
+    <form class="personal-form">
         <label>Nome: </label>
-        <input type="text" id="name" name="character-name" placeholder="Vincent" required>
+        <input type="text" id="name" name="character-name" placeholder="Vincent" required><br>
         <label>Idade: </label>
-        <input type="number" id="age" name="character-age" placeholder="35" required>
+        <input type="number" id="age" name="character-age" placeholder="35" required><br>
         <label>Nível: </label>
-        <input type="number" id="level" name="character-level" placeholder="1" required>
+        <input type="number" id="level" name="character-level" placeholder="1" required><br>
         <label>Facção: </label>
         <input type="text" id="faction" name="character-faction" placeholder="Corp/Marginal/Nômade" required>
     
@@ -30,8 +30,8 @@
 
 <!--Character's Attributes-->
 
-<section class="attributes">
-    <table>
+<div style="overflow-x:auto;">
+    <table class="attributes-table">
         <tr>
             <th>Atributo</th>
             <th>Valor</th>
@@ -74,52 +74,52 @@
             <td><input type="number"></td>
         </tr>
     </table>
-</section>
+</div>
 <br>
 <hr>
 
 <!--Body Parts-->
 
-<section id="cyberware">
+<section class="cyberware">
     <label for="cortex">Cortex Frontal</label>
     <select name="cortex">
         <option value="natural">Natural</option>
         <option value="cyberdeck-biodyne">Cyberdeck BioDyne</option>
         <option value="berserker-mk.1">Berserker Mk.1</option>
         <option value="militech-berserk-mk.5">Militech Berserk Mk.5</option>
-    </select>
+    </select><br>
 
     <label for="sistema-visual">Sistema Visual</label>
     <select name="sistema=visual">
         <option value="natural">Natural</option>
         <option value="optica-kiroshi-mk.3">Optica Kiroshi Mk.3</option>
-    </select>
+    </select><br>
 
     <label for="sistema-circulatorio">Sistema Circulatorio</label>
     <select name="sistema-circulatorio">
         <option value="natural">Natural</option>
         <option value="segundo-coracao">Segundo Coração</option>
-    </select>
+    </select><br>
 
     <label for="sistema-tegumentar">Sistema Tegumentar</label>
     <select name="sistema-tegumentar">
         <option value="natural">Natural</option>
         <option value="armadura-intracutaneo">Armadura Intracutaneo</option>
         <option value="camuflagem-subcuteanea">Camuflagem Subcuteanea</option>
-    </select>
+    </select><br>
 
     <label for="esqueleto">Esqueleto</label>
     <select name="esqueleto">
         <option value="natural">Natural</option>
         <option value="alumistenio">Alumistênio</option>
-    </select>
+    </select><br>
 
     <label for="mao">Mão</label>
     <select name="mao">
         <option value="natural">Natural</option>
         <option value="link-neural">Link Neural</option>
         <option value="unhas-grafeno">Unhas de Grafeno</option>
-    </select>
+    </select><br>
 
     <label for="braços">Braços</label>
     <select name="braços">
@@ -128,7 +128,7 @@
         <option value="bracos-gorila">Braços de Gorila</option>
         <option value="mono-fio">Mono-Fio</option>
         <option value="micro-missel">Micro Míssel</option>
-    </select>
+    </select><br>
 
     <label for="pernas">Pernas</label>
     <select name="pernas">
@@ -136,7 +136,7 @@
         <option value="patas-lince">Patas de Lince</option>
         <option value="joelho-amortecedor">Joelho Amortecedor</option>
         <option value="femu-pneumatico">Fêmur Pneumático</option>
-    </select>
+    </select><br>
 
 </section>
 <br>
@@ -155,7 +155,7 @@
 </section>
 
 <button type="submit">Enviar Relatário</button>
-
-</form><!-- <-- -->
+<button type="reset">Reiniciar Peenchimento</button>
+</form> <!-- <-- -->
 </body>
 </html>
