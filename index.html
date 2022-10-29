@@ -12,6 +12,7 @@
 <!--Character's Pernonal Date-->
 
 <section class=""><h1>Dados Pessoais</h1>
+    <br>
     <form>
         <label>Nome: </label>
         <input type="text" id="name" name="character-name" placeholder="Vincent" required>
@@ -22,8 +23,10 @@
         <label>Facção: </label>
         <input type="text" id="faction" name="character-faction" placeholder="Corp/Marginal/Nômade" required>
     
-    </form>
+    <!--/form-->
 </section>
+<br>
+<hr>
 
 <!--Character's Attributes-->
 
@@ -72,7 +75,87 @@
         </tr>
     </table>
 </section>
+<br>
+<hr>
 
-    
+<!--Body Parts-->
+
+<section id="cyberware">
+    <label for="cortex">Cortex Frontal</label>
+    <select name="cortex">
+        <option value="natural">Natural</option>
+        <option value="cyberdeck-biodyne">Cyberdeck BioDyne</option>
+        <option value="berserker-mk.1">Berserker Mk.1</option>
+        <option value="militech-berserk-mk.5">Militech Berserk Mk.5</option>
+    </select>
+
+    <label for="sistema-visual">Sistema Visual</label>
+    <select name="sistema=visual">
+        <option value="natural">Natural</option>
+        <option value="optica-kiroshi-mk.3">Optica Kiroshi Mk.3</option>
+    </select>
+
+    <label for="sistema-circulatorio">Sistema Circulatorio</label>
+    <select name="sistema-circulatorio">
+        <option value="natural">Natural</option>
+        <option value="segundo-coracao">Segundo Coração</option>
+    </select>
+
+    <label for="sistema-tegumentar">Sistema Tegumentar</label>
+    <select name="sistema-tegumentar">
+        <option value="natural">Natural</option>
+        <option value="armadura-intracutaneo">Armadura Intracutaneo</option>
+        <option value="camuflagem-subcuteanea">Camuflagem Subcuteanea</option>
+    </select>
+
+    <label for="esqueleto">Esqueleto</label>
+    <select name="esqueleto">
+        <option value="natural">Natural</option>
+        <option value="alumistenio">Alumistênio</option>
+    </select>
+
+    <label for="mao">Mão</label>
+    <select name="mao">
+        <option value="natural">Natural</option>
+        <option value="link-neural">Link Neural</option>
+        <option value="unhas-grafeno">Unhas de Grafeno</option>
+    </select>
+
+    <label for="braços">Braços</label>
+    <select name="braços">
+        <option value="natural">Natural</option>
+        <option value="louva-deus">Lâminas Louva-Deus</option>
+        <option value="bracos-gorila">Braços de Gorila</option>
+        <option value="mono-fio">Mono-Fio</option>
+        <option value="micro-missel">Micro Míssel</option>
+    </select>
+
+    <label for="pernas">Pernas</label>
+    <select name="pernas">
+        <option value="natural">Natural</option>
+        <option value="patas-lince">Patas de Lince</option>
+        <option value="joelho-amortecedor">Joelho Amortecedor</option>
+        <option value="femu-pneumatico">Fêmur Pneumático</option>
+    </select>
+
+</section>
+<br>
+<hr>
+
+<section id="inventario">
+    <h3>Inventário:</h3>
+    <h5>Armas:</h5>
+    <label name="primaria">Primária:</label>
+    <input type="text">
+    <label name="secundaria">Secundária:</label>
+    <input type="text">
+    <br>
+    <h5>Mochila/Items</h5>
+    <textarea></textarea>
+</section>
+
+<button type="submit">Enviar Relatário</button>
+
+</form><!-- <-- -->
 </body>
 </html>
