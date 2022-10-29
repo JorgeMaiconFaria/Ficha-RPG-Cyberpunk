@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: 'Barlow'}
 
-body{padding: 1%;}
+body{padding: 1%;
+background-color: #FCEE09;}
+
+hr{border-color: #FF003C;}
 
 h1{text-align: center;}
 
