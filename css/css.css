@@ -3,3 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Barlow'}
+
+body{padding: 1%;}
+
+h1{text-align: center;}
+
+table input{width: 75%;
+text-align: center;}
+
+tr th{text-align: left;}
