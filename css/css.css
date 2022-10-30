@@ -41,3 +41,64 @@ textarea:focus {
 font-weight: bold;}
 
 ::placeholder{color: #554B41;}
+
+/*<-- Buttons -->*/
+
+.btn{position:fixed}
+
+.ok {
+    width: 9rem;
+    height: 3rem;
+    border: solid .10rem black;
+    outline: none;
+    background-color: green;
+    cursor: pointer;
+    position: relative;
+    float: right;
+    font-family: Tomorrow, sans-serif;
+    font-size: .90rem;
+    text-transform: uppercase;
+    color: black;
+    clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+  }
+  
+  .ok__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-color: black;
+    clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+  }
+
+  .reset {
+    width: 9rem;
+    height: 3rem;
+    border: solid .10rem black;
+    outline: none;
+    background-color: #FF003C;
+    cursor: pointer;
+    position: relative;
+    font-family: Tomorrow, sans-serif;
+    font-size: .90rem;
+    text-transform: uppercase;
+    color: black;
+    clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+  }
+  
+  .reset__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: black;
+    clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+  }
