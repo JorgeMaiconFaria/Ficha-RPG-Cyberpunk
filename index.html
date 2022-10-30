@@ -30,6 +30,9 @@
 
 <!--Character's Attributes-->
 
+<h2>Atributos</h2>
+<br>
+
 <div style="overflow-x:auto;">
     <table class="attributes-table">
         <tr>
@@ -80,6 +83,9 @@
 
 <!--Body Parts-->
 
+<h2 class="cyberware-title">CyberWare</h2>
+<br>
+
 <section class="cyberware">
     <label for="cortex">Cortex Frontal</label>
     <select name="cortex">
@@ -105,7 +111,7 @@
     <select name="sistema-tegumentar">
         <option value="natural">Natural</option>
         <option value="armadura-intracutaneo">Armadura Intracutaneo</option>
-        <option value="camuflagem-subcuteanea">Camuflagem Subcuteanea</option>
+        <option value="camuflagem-subcuteanea">Camuf. Subcuteanea</option>
     </select><br>
 
     <label for="esqueleto">Esqueleto</label>
@@ -142,20 +148,20 @@
 <br>
 <hr>
 
-<section id="inventario">
+<div class="inventario">
     <h3>Inventário:</h3>
-    <h5>Armas:</h5>
+    <h4>Armas:</h4>
     <label name="primaria">Primária:</label>
-    <input type="text">
+    <input type="text"><br>
     <label name="secundaria">Secundária:</label>
     <input type="text">
     <br>
-    <h5>Mochila/Items</h5>
+    <h4>Mochila/Items</h4>
     <textarea></textarea>
-</section>
+</div>
 
-<button type="submit">Enviar Relatário</button>
-<button type="reset">Reiniciar Peenchimento</button>
+<button class="reset" type="reset">Reiniciar Peenchimento</button>
+<button class="ok" type="submit">Enviar Relatário</button>
 </form> <!-- <-- -->
 </body>
 </html>
