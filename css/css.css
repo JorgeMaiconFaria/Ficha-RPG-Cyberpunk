@@ -11,7 +11,33 @@ hr{border-color: #FF003C;}
 
 h1{text-align: center;}
 
+h2{text-align: center;}
+
+input{border-color: #00F0FF;}
+
+input:focus { 
+    outline: none !important;
+    border-color: #FF003C;
+    box-shadow: 0 0 10px #719ECE;}
+
+.cyberware{line-height: 2;}
+
+.inventario{line-height: 2;}
+
 table input{width: 75%;
-text-align: center;}
+text-align: center;
+border-color: #00F0FF;}
 
 tr th{text-align: left;}
+
+textarea{border-color: #00F0FF;}
+
+textarea:focus { 
+    outline: none !important;
+    border-color: #FF003C;
+    box-shadow: 0 0 10px #719ECE;}
+
+.personal-form{line-height: 2;
+font-weight: bold;}
+
+::placeholder{color: #554B41;}
