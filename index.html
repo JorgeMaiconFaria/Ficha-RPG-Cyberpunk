@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/css.css">
     <link rel="icon" href="img/icon_2b70782ce088dc25524782048a2c0d9f.ico">
+    <script src="/script/script.js"></script>
     <title>Departamento de Polícia de Night City</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
 
 <section class="personal"><h1>Dados Pessoais</h1>
     <br>
-    <form class="personal-form">
+    <!--  <form class="personal-form"> -->
         <label>Nome: </label>
         <input type="text" id="name" name="character-name" placeholder="Vincent" required><br>
         <label>Idade: </label>
@@ -44,9 +45,9 @@
 
         <tr>
             <td>Força</td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
+            <td><input id = "force" type="number" onchange = "calcStr()"></td>
+            <td><input id = "force-mod" type="number" onchange = "calcStr()"></td>
+            <td><input id = "force-total" onchange = "calcStr()"></td>
         </tr>
 
         <tr>
@@ -164,6 +165,6 @@
     <button class="reset" type="reset">Reiniciar Cadastro</button>
     <button class="ok" type="submit">Enviar Cadastro</button>
 </div>
-</form> <!-- <-- -->
+ <!-- <-</form>- -->
 </body>
 </html>
