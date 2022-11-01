@@ -37,7 +37,7 @@ textarea:focus {
     border-color: #FF003C;
     box-shadow: 0 0 10px #719ECE;}
 
-.personal-form{line-height: 2;
+.personal {line-height: 2;
 font-weight: bold;}
 
 ::placeholder{color: #554B41;}
