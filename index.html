@@ -18,9 +18,9 @@
         <label>Nome: </label>
         <input type="text" id="name" name="character-name" placeholder="Vincent" required><br>
         <label>Idade: </label>
-        <input type="number" id="age" name="character-age" placeholder="35" required><br>
+        <input type="number" id="age" name="character-age" min="18" max="300" placeholder="35" required><br>
         <label>Nível: </label>
-        <input type="number" id="level" name="character-level" placeholder="1" required><br>
+        <input type="number" id="level" name="character-level" min="1" max="50" placeholder="1" required><br>
         <label>Facção: </label>
         <input type="text" id="faction" name="character-faction" placeholder="Corp/Marginal/Nômade" required>
     
@@ -45,37 +45,37 @@
 
         <tr>
             <td>Força</td>
-            <td><input id = "force" type="number" onchange = "calcStr()"></td>
-            <td><input id = "force-mod" type="number" onchange = "calcStr()"></td>
-            <td><input id = "force-total" onchange = "calcStr()"></td>
+            <td><input id = "force" type="number" min="1" max="20" onchange = "calcStr()"></td>
+            <td><input id = "force-mod" type="number" min="1" max="20" onchange = "calcStr()"></td>
+            <td><input id = "force-total" type="number" min="1" max="40" onchange = "calcStr()"></td>
         </tr>
 
         <tr>
             <td>Agilidade</td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
+            <td><input type="number" id ="agil" min="1" max="20" onchange = "calcAgil()"></td>
+            <td><input type="number" id ="agil-mod" min="1" max="20" onchange = "calcAgil()"></td>
+            <td><input type="number" id ="agil-total" min="1" max="40" onchange = "calcAgil()"></td>
         </tr>
 
         <tr>
             <td>Inteligência</td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
+            <td><input type="number" id ="int" min="1" max="20" onchange="calcInt()"></td>
+            <td><input type="number" id ="int-mod" min="1" max="20" onchange="calcInt()"></td>
+            <td><input type="number" id ="int-total" min="1" max="40" onchange="calcInt()"></td>
         </tr>
 
         <tr>
             <td>Habilidade Técnica</td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
+            <td><input type="number" id ="tec.hab" min="1" max="20" onchange="calcTH()"></td>
+            <td><input type="number" id ="tec.hab-mod" min="1" max="20" onchange="calcTH()"></td>
+            <td><input type="number" id ="tec.hab-total" min="1" max="40" onchange="calcTH()"></td>
         </tr>
         
         <tr>
             <td>Moral</td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
-            <td><input type="number"></td>
+            <td><input type="number" id="cool" min="1" max="20" onchange="calcCool()"></td>
+            <td><input type="number" id="cool-mod" min="1" max="20" onchange="calcCool()"></td>
+            <td><input type="number" id="cool-total" min="1" max="40" onchange="calcCool()"></td>
         </tr>
     </table>
 </div>
