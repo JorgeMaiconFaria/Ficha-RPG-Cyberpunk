@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {background: black;
+      position: relative;
+      box-sizing: border-box;}
+canvas {display:block;
+        z-index: 1;}
+#conteiner {background-color: white;
+    box-sizing: border-box;
+        height: 33vh;
+        width: 33vh;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    border: 2px solid black;}
+
+form legend{color: red;
+            text-align: center;
+            font-size: 3vh;
+            font-family:  'Barlow';
+            font-weight: bold;}
+
+label {color: red;
+    display: block;
+    text-align: center;
+    font-size: 3vh;
+    font-family:  'Barlow';
+    font-weight: bold;}
+
+input{width: auto;
+    height: auto;
+font-size: 3em;}
