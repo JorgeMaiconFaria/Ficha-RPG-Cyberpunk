@@ -9,9 +9,9 @@ body {background: black;
       box-sizing: border-box;}
 canvas {display:block;
         z-index: 1;}
-#conteiner {background-color: white;
+#conteiner {background-color: transparent;
     box-sizing: border-box;
-        height: 33vh;
+        height: 50vh;
         width: 33vh;
         position: absolute;
         left: 0;
@@ -19,7 +19,7 @@ canvas {display:block;
         top: 0;
         bottom: 0;
         margin: auto;
-    border: 2px solid black;}
+        border: none;}
 
 form legend{color: red;
             text-align: center;
@@ -32,8 +32,61 @@ label {color: red;
     text-align: center;
     font-size: 3vh;
     font-family:  'Barlow';
-    font-weight: bold;}
+    font-weight: bold;
+    padding: 2px;}
 
-input{width: auto;
-    height: auto;
-font-size: 3em;}
+input{width: 100%;
+    padding: 1%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600px;
+    color: #3a444d;
+    font-size: clamp(55px, 5vw, 1rem);
+}/*{font-size: clamp(8px, 5vw, 4.5rem);
+    margin-left: 1.6vh;
+    box-sizing: border-box;
+    text-align: center;}*/
+
+button{
+    width: 16vh;
+    height: 6vh;
+    border: solid .10rem black;
+    outline: none;
+    background-color: rgba(255,0,0, 0.6);
+    cursor: pointer;
+    position: absolute;
+        left: 0;
+        right: 0;
+        top: 25vh;
+        bottom: 0;
+        margin: auto;
+    float: right;
+    font-family: Tomorrow, sans-serif;
+    font-size: 3vh;
+    text-transform: uppercase;
+    color: black;
+    clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+  }
+  
+  .ok__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background-color: black;
+    clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+  }/*{font-size: 4em;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 2vh;
+    bottom: 0;
+    margin: auto;
+    justify-content: flex;
+    display: block;
+    text-align: left;}

@@ -1,170 +1,30 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/css.css">
-    <link rel="icon" href="img/icon_2b70782ce088dc25524782048a2c0d9f.ico">
-    <script defer src="script/script.js"></script>
-    <title>Departamento de Polícia de Night City</title>
-</head>
-<body>
-
-<!--Character's Pernonal Date-->
-
-<section class="personal"><h1>Dados Pessoais</h1>
-    <br>
-    <!--  <form class="personal-form"> -->
-        <label>Nome: </label>
-        <input type="text" id="name" name="character-name" placeholder="Vincent" required><br>
-        <label>Idade: </label>
-        <input type="number" id="age" name="character-age" min="18" max="300" placeholder="35" required><br>
-        <label>Nível: </label>
-        <input type="number" id="level" name="character-level" min="1" max="50" placeholder="1" required><br>
-        <label>Facção: </label>
-        <input type="text" id="faction" name="character-faction" placeholder="Corp/Marginal/Nômade" required>
-    
-    <!--/form-->
-</section>
-<br>
-<hr>
-
-<!--Character's Attributes-->
-
-<h2>Atributos</h2>
-<br>
-
-<div style="overflow-x:auto;">
-    <table class="attributes-table">
-        <tr>
-            <th>Atributo</th>
-            <th>Valor</th>
-            <th>Bonus</th>
-            <th>Total</th>
-        </tr>
-
-        <tr>
-            <td>Força</td>
-            <td><input id = "force" type="number" min="1" max="20" onchange = "calcStr()"></td>
-            <td><input id = "force-mod" type="number" min="1" max="20" onchange = "calcStr()"></td>
-            <td><input id = "force-total" type="number" min="1" max="40" onchange = "calcStr()"></td>
-        </tr>
-
-        <tr>
-            <td>Agilidade</td>
-            <td><input type="number" id ="agil" min="1" max="20" onchange = "calcAgil()"></td>
-            <td><input type="number" id ="agil-mod" min="1" max="20" onchange = "calcAgil()"></td>
-            <td><input type="number" id ="agil-total" min="1" max="40" onchange = "calcAgil()"></td>
-        </tr>
-
-        <tr>
-            <td>Inteligência</td>
-            <td><input type="number" id ="int" min="1" max="20" onchange="calcInt()"></td>
-            <td><input type="number" id ="int-mod" min="1" max="20" onchange="calcInt()"></td>
-            <td><input type="number" id ="int-total" min="1" max="40" onchange="calcInt()"></td>
-        </tr>
-
-        <tr>
-            <td>Habilidade Técnica</td>
-            <td><input type="number" id ="tec.hab" min="1" max="20" onchange="calcTH()"></td>
-            <td><input type="number" id ="tec.hab-mod" min="1" max="20" onchange="calcTH()"></td>
-            <td><input type="number" id ="tec.hab-total" min="1" max="40" onchange="calcTH()"></td>
-        </tr>
+<html>
+ 
+    <head>
+        <link rel="stylesheet" href="css/css-login.css">
+        <script defer src="script/script-login.js"></script>
         
-        <tr>
-            <td>Moral</td>
-            <td><input type="number" id="cool" min="1" max="20" onchange="calcCool()"></td>
-            <td><input type="number" id="cool-mod" min="1" max="20" onchange="calcCool()"></td>
-            <td><input type="number" id="cool-total" min="1" max="40" onchange="calcCool()"></td>
-        </tr>
-    </table>
-</div>
-<br>
-<hr>
+    </head>
+    <body>
+    
+        <canvas id="c">
+           
+        </canvas>
+        <div id="conteiner"> 
+            <form>
+                
+                    <legend>Login</legend>
+                    <label>Usuário:</label>
+                    <input type="text">
+                    <label>Idade:</label>
+                    <input type="number">
+                    <label>Facção:</label>
+                    <input type="text">
 
-<!--Body Parts-->
+                    <button>Entrar</button>
+                
 
-<h2 class="cyberware-title">CyberWare</h2>
-<br>
-
-<section class="cyberware">
-    <label for="cortex">Cortex Frontal</label>
-    <select name="cortex">
-        <option value="natural">Natural</option>
-        <option value="cyberdeck-biodyne">Cyberdeck BioDyne</option>
-        <option value="berserker-mk.1">Berserker Mk.1</option>
-        <option value="militech-berserk-mk.5">Militech Berserk Mk.5</option>
-    </select><br>
-
-    <label for="sistema-visual">Sistema Visual</label>
-    <select name="sistema=visual">
-        <option value="natural">Natural</option>
-        <option value="optica-kiroshi-mk.3">Optica Kiroshi Mk.3</option>
-    </select><br>
-
-    <label for="sistema-circulatorio">Sistema Circulatorio</label>
-    <select name="sistema-circulatorio">
-        <option value="natural">Natural</option>
-        <option value="segundo-coracao">Segundo Coração</option>
-    </select><br>
-
-    <label for="sistema-tegumentar">Sistema Tegumentar</label>
-    <select name="sistema-tegumentar">
-        <option value="natural">Natural</option>
-        <option value="armadura-intracutaneo">Armadura Intracutaneo</option>
-        <option value="camuflagem-subcuteanea">Camuf. Subcuteanea</option>
-    </select><br>
-
-    <label for="esqueleto">Esqueleto</label>
-    <select name="esqueleto">
-        <option value="natural">Natural</option>
-        <option value="alumistenio">Alumistênio</option>
-    </select><br>
-
-    <label for="mao">Mão</label>
-    <select name="mao">
-        <option value="natural">Natural</option>
-        <option value="link-neural">Link Neural</option>
-        <option value="unhas-grafeno">Unhas de Grafeno</option>
-    </select><br>
-
-    <label for="braços">Braços</label>
-    <select name="braços">
-        <option value="natural">Natural</option>
-        <option value="louva-deus">Lâminas Louva-Deus</option>
-        <option value="bracos-gorila">Braços de Gorila</option>
-        <option value="mono-fio">Mono-Fio</option>
-        <option value="micro-missel">Micro Míssel</option>
-    </select><br>
-
-    <label for="pernas">Pernas</label>
-    <select name="pernas">
-        <option value="natural">Natural</option>
-        <option value="patas-lince">Patas de Lince</option>
-        <option value="joelho-amortecedor">Joelho Amortecedor</option>
-        <option value="femu-pneumatico">Fêmur Pneumático</option>
-    </select><br>
-
-</section>
-<br>
-<hr>
-
-<div class="inventario">
-    <h3>Inventário:</h3>
-    <h4>Armas:</h4>
-    <label name="primaria">Primária:</label>
-    <input type="text"><br>
-    <label name="secundaria">Secundária:</label>
-    <input type="text">
-    <br>
-    <h4>Mochila/Items</h4>
-    <textarea></textarea>
-</div>
-
-<div class="btns">
-    <button class="reset" type="reset">Reiniciar Cadastro</button>
-    <button class="ok" type="submit">Enviar Cadastro</button>
-</div>
- <!-- <-</form>- -->
-</body>
+            </form>
+        </div>
+    </body>
 </html>

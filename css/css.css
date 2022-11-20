@@ -5,7 +5,17 @@
     font-family: 'Barlow'}
 
 body{padding: 1%;
-background-color: #FCEE09;}
+  
+    background-image: 
+     
+      linear-gradient(
+        rgba(250, 180, 0, 0.45), 
+        rgba(230, 200, 0, 0.45)
+      ),
+      /* your image */
+      url(/img/cyber.gif); background-repeat:repeat;
+  background-position: center;
+background-size: cover;}
 
 hr{border-color: #FF003C;}
 
