@@ -49,3 +49,15 @@ function draw()
 }
 
 setInterval(draw, 35);
+
+/*!!! Form Scripts !!!*/
+
+const form = document.querySelector('.form-login');
+
+const handleSubmit = (event) => {
+    event.preventDefault();
+}
+
+
+
+form.addEventListener('submit', handleSubmit);
