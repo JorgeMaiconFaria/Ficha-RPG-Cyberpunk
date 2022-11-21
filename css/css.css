@@ -13,7 +13,7 @@ body{padding: 1%;
         rgba(230, 200, 0, 0.45)
       ),
       /* your image */
-      url(/img/cyber.gif); background-repeat:repeat;
+      url(../img/cyber.gif); background-repeat:repeat;
   background-position: center;
 background-size: cover;}
 
