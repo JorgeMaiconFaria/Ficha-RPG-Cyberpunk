@@ -1,8 +1,10 @@
 <html>
  
     <head>
+        <title>Login DPNC</title>
         <link rel="stylesheet" href="css/css-login.css">
         <script defer src="script/script-login.js"></script>
+        <link rel="icon" href="img/icon_2b70782ce088dc25524782048a2c0d9f.ico">
         
     </head>
     <body>
@@ -11,17 +13,17 @@
            
         </canvas>
         <div id="conteiner"> 
-            <form>
+            <form class="form-login">
                 
                     <legend>Login</legend>
                     <label>Usuário:</label>
-                    <input type="text">
+                    <input type="text" required>
                     <label>Idade:</label>
-                    <input type="number">
+                    <input type="number" min="16" max="200" required>
                     <label>Facção:</label>
-                    <input type="text">
+                    <input type="text" required>
 
-                    <button>Entrar</button>
+                    <button class="btn">Entrar</button>
                 
 
             </form>
