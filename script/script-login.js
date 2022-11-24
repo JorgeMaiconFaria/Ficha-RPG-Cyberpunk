@@ -53,9 +53,15 @@ setInterval(draw, 35);
 /*!!! Form Scripts !!!*/
 
 const form = document.querySelector('.form-login');
+const inputName = document.querySelector('#name');
+const inputAge = document.querySelector('#age');
+const inputFac = document.querySelector('#fac');
 
 const handleSubmit = (event) => {
     event.preventDefault();
+    console.log(inputName.value)
+    console.log(inputAge.value)
+    console.log(inputFac.value)
 }
 
 
