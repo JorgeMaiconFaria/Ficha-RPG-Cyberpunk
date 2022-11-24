@@ -9,8 +9,8 @@ body{padding: 1%;
     background-image: 
      
       linear-gradient(
-        rgba(250, 180, 0, 0.45), 
-        rgba(230, 200, 0, 0.45)
+        rgba(150, 240, 250, 0.45), 
+        rgba(150, 240, 250, 0.45)
       ),
       /* your image */
       url(../img/cyber.gif); background-repeat:repeat;
@@ -23,7 +23,7 @@ h1{text-align: center;}
 
 h2{text-align: center;}
 
-input{border-color: #00F0FF;}
+input{border-color: #FCEE0C;}
 
 input:focus { 
     outline: none !important;
@@ -31,16 +31,17 @@ input:focus {
     box-shadow: 0 0 10px #719ECE;}
 
 .cyberware{line-height: 2;}
+.cyberware label{font-weight: bold;}
 
 .inventario{line-height: 2;}
 
 table input{width: 75%;
 text-align: center;
-border-color: #00F0FF;}
+border-color: #FCEE0C;}
 
 tr th{text-align: left;}
 
-textarea{border-color: #00F0FF;}
+textarea{border-color: #FCEE0C;}
 
 textarea:focus { 
     outline: none !important;
