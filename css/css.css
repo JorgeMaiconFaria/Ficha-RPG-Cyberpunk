@@ -9,49 +9,81 @@ body{padding: 1%;
     background-image: 
      
       linear-gradient(
-        rgba(150, 240, 250, 0.45), 
-        rgba(150, 240, 250, 0.45)
+        rgba(233, 104, 104, 0.45), 
+        rgba(236, 110, 110, 0.45)
       ),
       /* your image */
       url(../img/cyber.gif); background-repeat:repeat;
   background-position: center;
 background-size: cover;}
 
-hr{border-color: #FF003C;}
+hr{border-color: #0BC4CF;}
 
-h1{text-align: center;}
+h1{text-align: center;
+font-weight: bold;
+color: red;
+font-size: clamp(35px, 5vw, 1rem);}
 
-h2{text-align: center;}
+h2{text-align: center;
+  color: red;
+  font-size: clamp(30px, 5vw, 1rem);}
 
-input{border-color: #FCEE0C;}
+h3{color: red;
+  font-size: clamp(30px, 5vw, 1rem);}
+
+input{border-color: #0BC4CF;}
 
 input:focus { 
     outline: none !important;
-    border-color: #FF003C;
+    border-color: #fbf665;
     box-shadow: 0 0 10px #719ECE;}
 
-.cyberware{line-height: 2;}
-.cyberware label{font-weight: bold;}
+.cyberware{line-height: 2;
+  font-size: clamp(8px, 5vw, 1rem);}
+.cyberware label{font-weight: bold;
+  font-size: clamp(18px, 5vw, 1rem);}
 
-.inventario{line-height: 2;}
+.inventario{line-height: 2;
+  font-size: clamp(18px, 5vw, 1rem);
+}
+
+.inventario input{font-size: clamp(18px, 5vw, 1rem);}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0.5rem;
+  
+}
 
 table input{width: 75%;
 text-align: center;
-border-color: #FCEE0C;}
+border-color: #73fffe;
+padding: 1%;
+font-size: clamp(18px, 5vw, 1rem);}
 
-tr th{text-align: left;}
+tr th{text-align: left;
+font-size: clamp(18px, 5vw, 1rem);}
 
-textarea{border-color: #FCEE0C;}
+td{font-weight: bold;
+font-style: italic;
+font-size: clamp(18px, 5vw, 1rem);}
+
+textarea{border-color: #73fffe;}
 
 textarea:focus { 
     outline: none !important;
-    border-color: #FF003C;
-    box-shadow: 0 0 10px #719ECE;}
+    border-color: #fbf665;
+    box-shadow: 0 0 10px #719ECE;
+    font-size: clamp(18px, 5vw, 1rem);}
 
 .personal {line-height: 2;
-font-weight: bold;}
+font-weight: bold;
+font-size: clamp(18px, 5vw, 1rem);
+}
 
-::placeholder{color: #554B41;}
+.personal input {font-size: clamp(18px, 5vw, 1rem);}
+
+::placeholder{color: black;}
 
 /*<-- Buttons -->*/
 
@@ -62,7 +94,7 @@ font-weight: bold;}
     height: 3rem;
     border: solid .10rem black;
     outline: none;
-    background-color: green;
+    background-color: #0BC4CF;
     cursor: pointer;
     position: relative;
     float: right;
