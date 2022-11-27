@@ -47,35 +47,35 @@
             <td>Força</td>
             <td><input id = "force" type="number" min="1" max="20" onchange = "calcStr()"></td>
             <td><input id = "force-mod" type="number" min="1" max="20" onchange = "calcStr()"></td>
-            <td><input id = "force-total" type="number" min="1" max="40" onchange = "calcStr()"></td>
+            <td id = "force-total" onchange = "calcStr()">0</td>
         </tr>
 
         <tr>
             <td>Agilidade</td>
             <td><input type="number" id ="agil" min="1" max="20" onchange = "calcAgil()"></td>
             <td><input type="number" id ="agil-mod" min="1" max="20" onchange = "calcAgil()"></td>
-            <td><input type="number" id ="agil-total" min="1" max="40" onchange = "calcAgil()"></td>
+            <td id ="agil-total" onchange = "calcAgil()">0</td>
         </tr>
 
         <tr>
             <td>Inteligência</td>
             <td><input type="number" id ="int" min="1" max="20" onchange="calcInt()"></td>
             <td><input type="number" id ="int-mod" min="1" max="20" onchange="calcInt()"></td>
-            <td><input type="number" id ="int-total" min="1" max="40" onchange="calcInt()"></td>
+            <td id ="int-total" onchange="calcInt()">0</td>
         </tr>
 
         <tr>
             <td>Habilidade Técnica</td>
             <td><input type="number" id ="tec.hab" min="1" max="20" onchange="calcTH()"></td>
             <td><input type="number" id ="tec.hab-mod" min="1" max="20" onchange="calcTH()"></td>
-            <td><input type="number" id ="tec.hab-total" min="1" max="40" onchange="calcTH()"></td>
+            <td id ="tec-hab-total" onchange="calcTH()">0</td>
         </tr>
         
         <tr>
             <td>Moral</td>
             <td><input type="number" id="cool" min="1" max="20" onchange="calcCool()"></td>
             <td><input type="number" id="cool-mod" min="1" max="20" onchange="calcCool()"></td>
-            <td><input type="number" id="cool-total" min="1" max="40" onchange="calcCool()"></td>
+            <td id="cool-total" onchange="calcCool()">0</td>
         </tr>
     </table>
 </div>
