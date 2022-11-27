@@ -43,11 +43,9 @@ input{width: 100%;
     font-weight: 600px;
     color: #3a444d;
     font-size: clamp(55px, 5vw, 1rem);
-}/*{font-size: clamp(8px, 5vw, 4.5rem);
-    margin-left: 1.6vh;
-    box-sizing: border-box;
-    text-align: center;}*/
+}
 
+/*---BUTTONS---*/
 button{
     width: 16vh;
     height: 6vh;
