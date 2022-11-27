@@ -1,21 +1,31 @@
+/*---RESET AND FONT---*/
+
 @import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
 *{margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Barlow'}
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Barlow'}
+  
+/*---BODY AND BACKGROUND---*/
 
 body{padding: 1%;
-  
-    background-image: 
-     
-      linear-gradient(
-        rgba(233, 104, 104, 0.45), 
-        rgba(236, 110, 110, 0.45)
-      ),
-      /* your image */
-      url(../img/cyber.gif); background-repeat:repeat;
-  background-position: center;
+background-image: 
+
+linear-gradient(  rgba(233, 104, 104, 0.45), 
+                  rgba(236, 110, 110, 0.45)),
+url(../img/cyber.gif); background-repeat:repeat;
+background-position: center;
 background-size: cover;}
+
+.personal {line-height: 2;
+font-weight: bold;
+font-size: clamp(18px, 5vw, 1rem);}
+
+.personal input {font-size: clamp(18px, 5vw, 1rem);}
+
+/*---HR, H1, H2, H3, INPUTS, PLACEHOLDER---*/
+        
+::placeholder{color: black;}
 
 hr{border-color: #0BC4CF;}
 
@@ -25,39 +35,27 @@ color: red;
 font-size: clamp(35px, 5vw, 1rem);}
 
 h2{text-align: center;
-  color: red;
-  font-size: clamp(30px, 5vw, 1rem);}
+color: red;
+font-size: clamp(30px, 5vw, 1rem);}
 
 h3{color: red;
-  font-size: clamp(30px, 5vw, 1rem);}
+font-size: clamp(30px, 5vw, 1rem);}
 
 input{border-color: #0BC4CF;}
 
-input:focus { 
-    outline: none !important;
-    border-color: #fbf665;
-    box-shadow: 0 0 10px #719ECE;}
+input:focus {outline: none !important;
+border-color: #fbf665;
+box-shadow: 0 0 10px #719ECE;}
 
-.cyberware{line-height: 2;
-  font-size: clamp(8px, 5vw, 1rem);}
-.cyberware label{font-weight: bold;
-  font-size: clamp(18px, 5vw, 1rem);}
-
-.inventario{line-height: 2;
-  font-size: clamp(18px, 5vw, 1rem);
-}
-
-#int-total, #force-total, #agil-total, #tec-hab-total, #cool-total{font-size: clamp(22px, 5vw, 1rem);
-color: #0BC4CF;
-text-decoration: underline;}
-
-.inventario input{font-size: clamp(18px, 5vw, 1rem);}
+/*---ATTRIBUTES'S TABLE---*/
 
 table {
   border-collapse: separate;
-  border-spacing: 0.5rem;
-  
-}
+  border-spacing: 0.5rem;}
+
+#int-total, #force-total, #agil-total, #tec-hab-total, #cool-total{font-size: clamp(22px, 5vw, 1rem);
+  color: #0BC4CF;
+text-decoration: underline;}
 
 table input{width: 75%;
 text-align: center;
@@ -73,6 +71,21 @@ font-style: italic;
 font-size: clamp(18px, 5vw, 1rem);
 color: #0BC4CF;}
 
+/*---CYBERWARE---*/
+
+.cyberware{line-height: 2;
+  font-size: clamp(8px, 5vw, 1rem);}
+
+.cyberware label{font-weight: bold;
+  font-size: clamp(18px, 5vw, 1rem);}
+
+/*---INVENTORY*/
+
+.inventario{line-height: 2;
+  font-size: clamp(18px, 5vw, 1rem);}
+
+.inventario input{font-size: clamp(18px, 5vw, 1rem);}
+
 textarea{border-color: #73fffe;
   font-size: clamp(18px, 5vw, 1rem);}
 
@@ -81,15 +94,6 @@ textarea:focus {
     border-color: #fbf665;
     box-shadow: 0 0 10px #719ECE;
     font-size: clamp(18px, 5vw, 1rem);}
-
-.personal {line-height: 2;
-font-weight: bold;
-font-size: clamp(18px, 5vw, 1rem);
-}
-
-.personal input {font-size: clamp(18px, 5vw, 1rem);}
-
-::placeholder{color: black;}
 
 /*<-- Buttons -->*/
 
