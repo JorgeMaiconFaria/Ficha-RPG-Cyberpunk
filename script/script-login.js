@@ -59,9 +59,11 @@ const inputFac = document.querySelector('#fac');
 
 const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(inputName.value)
-    console.log(inputAge.value)
-    console.log(inputFac.value)
+
+    localStorage.setItem('player', inputName.value);
+    localStorage.setItem('age', inputAge.value);
+    localStorage.setItem('fac', inputFac.value);
+    window.location = 'sheet.html'
 }
 
 
