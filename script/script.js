@@ -1,3 +1,5 @@
+/*---ATTRIBUTES TABLE'S SCRIPT*/
+
 function calcStr() {
     var str = document.getElementById('force').value;
     var strMod = document.getElementById('force-mod').value;
