@@ -6,7 +6,7 @@ var ctx = c.getContext("2d");
 c.height = window.innerHeight;
 c.width = window.innerWidth;
 
-//chinese characters - taken from the unicode charset
+
 var matrix = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}";
 //converting the string into an array of single characters
 matrix = matrix.split("");
@@ -50,7 +50,7 @@ function draw()
 
 setInterval(draw, 35);
 
-/*!!! Form Scripts !!!*/
+/*---Form Scripts---*/
 
 const form = document.querySelector('.form-login');
 const inputName = document.querySelector('#name');
