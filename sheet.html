@@ -87,60 +87,68 @@
 
 <section class="cyberware">
     <label for="cortex">Cortex Frontal</label>
-    <select name="cortex">
-        <option value="natural">Natural</option>
-        <option value="cyberdeck-biodyne">Cyberdeck BioDyne</option>
-        <option value="berserker-mk.1">Berserker Mk.1</option>
-        <option value="militech-berserk-mk.5">Militech Berserk Mk.5</option>
+    <select id="cortex" name="cortex">
+        <option value="0">Selecione</option>
+        <option value="1">Natural</option>
+        <option value="2">Cyberdeck BioDyne</option>
+        <option value="3">Berserker Mk.1</option>
+        <option value="4">Militech Berserk Mk.5</option>
     </select><br>
 
     <label for="sistema-visual">Sistema Visual</label>
-    <select name="sistema=visual">
-        <option value="natural">Natural</option>
-        <option value="optica-kiroshi-mk.3">Optica Kiroshi Mk.3</option>
+    <select id="sistema-visual" name="sistema-visual">
+        <option value="0">Selecione</option>
+        <option value="1">Natural</option>
+        <option value="2">Optica Kiroshi Mk.3</option>
     </select><br>
 
     <label for="sistema-circulatorio">Sistema Circulatorio</label>
-    <select name="sistema-circulatorio">
-        <option value="natural">Natural</option>
-        <option value="segundo-coracao">Segundo Coração</option>
+    <select id="sistema-circulatorio">
+        <option value="0">Selecione</option>
+        <option value="1">Natural</option>
+        <option value="2">Segundo Coração</option>
     </select><br>
 
     <label for="sistema-tegumentar">Sistema Tegumentar</label>
-    <select name="sistema-tegumentar">
-        <option value="natural">Natural</option>
-        <option value="armadura-intracutaneo">Armadura Intracutaneo</option>
-        <option value="camuflagem-subcuteanea">Camuf. Subcuteanea</option>
+    <select id="sistema-tegumentar">
+        <option value="0">Selecione</option>
+        <option value="1">Natural</option>
+        <option value="2">Armadura Intracutaneo</option>
+        <option value="3">Camuf. Subcuteanea</option>
     </select><br>
 
     <label for="esqueleto">Esqueleto</label>
-    <select name="esqueleto">
-        <option value="natural">Natural</option>
-        <option value="alumistenio">Alumistênio</option>
+    <select id="esqueleto">
+        <option value="0">Selecione</option>
+        <option value="1">Natural</option>
+        <option value="2">Alumistênio</option>
     </select><br>
 
     <label for="mao">Mão</label>
-    <select name="mao">
-        <option value="natural">Natural</option>
-        <option value="link-neural">Link Neural</option>
-        <option value="unhas-grafeno">Unhas de Grafeno</option>
+    <select id="mao">
+        <option value="0">Selecione</option>
+        <option value="1">Natural</option>
+        <option value="2">Link Neural</option>
+        <option value="3">Unhas de Grafeno</option>
     </select><br>
 
     <label for="braços">Braços</label>
-    <select name="braços">
-        <option value="natural">Natural</option>
-        <option value="louva-deus">Lâminas Louva-Deus</option>
-        <option value="bracos-gorila">Braços de Gorila</option>
-        <option value="mono-fio">Mono-Fio</option>
-        <option value="micro-missel">Micro Míssel</option>
+    <select id="braços">
+        <option value="0">Selecione</option>
+        <option value="1">Natural</option>
+        <option value="2">Lâminas Louva-Deus</option>
+        <option value="3">Braços de Gorila</option>
+        <option value="4">Mono-Fio</option>
+        <option value="5">Micro Míssel</option>
     </select><br>
 
     <label for="pernas">Pernas</label>
-    <select name="pernas">
-        <option value="natural">Natural</option>
-        <option value="patas-lince">Patas de Lince</option>
-        <option value="joelho-amortecedor">Joelho Amortecedor</option>
-        <option value="femu-pneumatico">Fêmur Pneumático</option>
+    <select id="pernas">
+        <option value="0">Selecione</option>
+        <option value="1">Natural</option>
+        <option value="2">Patas de Lince</option>
+        <option value="3">Joelho Amortecedor</option>
+        <option value="4">Fêmur Pneumático</option>
     </select><br>
 
 </section>
@@ -150,10 +158,10 @@
 <div class="inventario">
     <h3>Inventário:</h3>
     <h4>Armas:</h4>
-    <label name="primaria">Primária:</label>
-    <input type="text"><br>
-    <label name="secundaria">Secundária:</label>
-    <input type="text">
+    <label>Primária:</label>
+    <input id="primaria" type="text"><br>
+    <label>Secundária:</label>
+    <input id='secundaria' type="text">
     <br>
     <h4>Mochila/Items</h4>
     <textarea></textarea>
