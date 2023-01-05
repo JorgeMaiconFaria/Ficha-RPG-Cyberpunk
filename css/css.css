@@ -24,9 +24,24 @@ font-size: clamp(18px, 5vw, 1rem);}
 .personal input {font-size: clamp(18px, 5vw, 1rem);}
 
 #cyberdeck{display: none;
+  position: relative;
   line-height: 2;
-  font-size: clamp(8px, 5vw, 1rem);
+  font-size: clamp(18px, 5vw, 1rem);
   font-weight: bold;}
+
+#hack1, #hack2, #hack3{font-size: clamp(18px, 5vw, 1rem);}
+
+#ram{width: 100vw;
+  height: 15vw;
+  box-sizing: content-box;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#ram-atual, #ram-total, #marker{font-size: clamp(25px, 7vw, 1.5rem);
+  padding: 2%;}
+
+
 
 /*---HR, H1, H2, H3, INPUTS, PLACEHOLDER, SPAN---*/
 
@@ -48,6 +63,10 @@ font-size: clamp(30px, 5vw, 1rem);}
 
 h3{color: red;
 font-size: clamp(30px, 5vw, 1rem);}
+
+h5{text-align: center;
+  font-size: clamp(25px, 5vw, 1rem);
+  color: #0BC4CF;}
 
 input{border-color: #0BC4CF;}
 
@@ -104,6 +123,32 @@ textarea:focus {
     font-size: clamp(18px, 5vw, 1rem);}
 
 /*<-- Buttons -->*/
+
+#crescer{width: 5rem;
+  height: 2.5rem;
+  border: solid .10rem black;
+  outline: none;
+  padding: 2%;
+  background-color: rgb(115, 255, 254);
+  cursor: pointer;
+  font-family: Tomorrow, sans-serif;
+  font-size: .90rem;
+  text-transform: uppercase;
+  color: black;
+  clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);}
+  
+  #descer{width: 5rem;
+    height: 2.5rem;
+    border: solid .10rem black;
+    outline: none;
+    padding: 2%;
+    background-color: rgba(251, 246, 101, 0.7);
+    cursor: pointer;
+    font-family: Tomorrow, sans-serif;
+    font-size: .90rem;
+    text-transform: uppercase;
+    color: black;
+    clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);}
 
 .btn{position:fixed}
 
