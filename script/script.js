@@ -18,8 +18,8 @@ function calcInt() {
     return Math.floor((parseInt(int) + parseInt(intMod)));};
 
 function calcTH() {
-    var tH = document.getElementById('tec.hab').value;
-    var tHMod = document.getElementById('tec.hab-mod').value;
+    var tH = document.getElementById('tec-hab').value;
+    var tHMod = document.getElementById('tec-hab-mod').value;
     document.getElementById('tec-hab-total').innerHTML = Math.floor((parseInt(tH) + parseInt(tHMod)));
     return Math.floor((parseInt(tH) + parseInt(tHMod)));};
 
@@ -43,10 +43,21 @@ const mao = document.getElementById('mao');
 const braco = document.getElementById('braços');
 const pernas = document.getElementById('pernas');
 
-
 const imputPrimaria = document.querySelector('#primaria');
 const imputSecundaria = document.querySelector('#secundaria');
-const imputmochila = document.getElementsByTagName('textarea').innerText;
+const imputmochila = document.getElementById('mochila');
+
+const str = document.getElementById('force');
+const strMod = document.getElementById('force-mod');
+const agil = document.getElementById('agil');
+const agilMod = document.getElementById('agil-mod')
+const int = document.getElementById('int');
+const intMod = document.getElementById('int-mod');
+const tH = document.getElementById('tec-hab');
+const tHMod = document.getElementById('tec-hab-mod');
+const cool = document.getElementById('cool');
+const coolMod = document.getElementById('cool-mod');
+
 
 
 
@@ -61,10 +72,21 @@ const handleSubmit = (event) => {
     event.preventDefault();
 
     localStorage.setItem('prima', imputPrimaria.value);
-   // document.querySelector('#primaria').innerText = localStorage.getItem('prima');
-
     localStorage.setItem('second', imputSecundaria.value);
-    //document.querySelector('#secundaria').innerText = localStorage.getItem('second');
+    localStorage.setItem('mochila', imputmochila.value);    
+    localStorage.setItem('str1', str.value);
+    localStorage.setItem('str2', strMod.value);
+    localStorage.setItem('agil1', agil.value);
+    localStorage.setItem('agil2', agilMod.value);
+    localStorage.setItem('int1', int.value);
+    localStorage.setItem('int2', intMod.value);
+    localStorage.setItem('tH1', tH.value);
+    localStorage.setItem('tH2', tHMod.value);
+    localStorage.setItem('cool1', cool.value);
+    localStorage.setItem('cool2', coolMod.value);
+    
+
+
 
     localStorage.setItem('strTotal', calcStr());
     //document.getElementById('force-total').innerHTML = localStorage.getItem('strTotal');
@@ -80,6 +102,7 @@ const handleSubmit = (event) => {
 
     localStorage.setItem('coolTotal', calcCool());
    // document.getElementById('cool-total').innerHTML = localStorage.getItem('coolTotal');
+
 
     var cortexText = cortex.options[cortex.selectedIndex].text;
     localStorage.setItem('cortexS', cortexText);
@@ -137,6 +160,17 @@ window.onload = () => {
 
     document.querySelector('#primaria').setAttribute('value', localStorage.getItem('prima'))
     document.querySelector('#secundaria').setAttribute ('value', localStorage.getItem('second'));
+    document.querySelector('#mochila').innerHTML = localStorage.getItem('mochila');
+    document.querySelector('#force').value = localStorage.getItem('str1');
+    document.querySelector('#force-mod').value = localStorage.getItem('str2');
+    document.querySelector('#agil').value = localStorage.getItem('agil1');
+    document.querySelector('#agil-mod').value = localStorage.getItem('agil2');
+    document.querySelector('#int').value = localStorage.getItem('int1');
+    document.querySelector('#int-mod').value = localStorage.getItem('int2');
+    document.querySelector('#tec-hab').value = localStorage.getItem('tH1');
+    document.querySelector('#tec-hab-mod').value = localStorage.getItem('tH2');
+    document.querySelector('#cool').value = localStorage.getItem('cool1');
+    document.querySelector('#cool-mod').value = localStorage.getItem('cool2');
 
     spanPlayer.innerHTML = playerName;
     spanAge.innerHTML = playerAge;
