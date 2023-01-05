@@ -23,6 +23,11 @@ font-size: clamp(18px, 5vw, 1rem);}
 
 .personal input {font-size: clamp(18px, 5vw, 1rem);}
 
+#cyberdeck{display: none;
+  line-height: 2;
+  font-size: clamp(8px, 5vw, 1rem);
+  font-weight: bold;}
+
 /*---HR, H1, H2, H3, INPUTS, PLACEHOLDER, SPAN---*/
 
 span{font-size: clamp(18px, 5vw, 1rem);

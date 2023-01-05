@@ -29,6 +29,19 @@ function calcCool() {
     document.getElementById('cool-total').innerHTML = Math.floor((parseInt(cool) + parseInt(coolMod)));
     return Math.floor((parseInt(cool) + parseInt(coolMod)));};
 
+
+    
+//let cyberdeck = document.getElementById('cyberdeck')
+
+function cyberdeckdiv(){
+    const intTotal = document.getElementById('int-total').innerHTML
+    let cyberdeck = document.getElementById('cyberdeck')
+    if (intTotal >= 3) {
+        cyberdeck.style.display = 'block'
+    } else {cyberdeck.style.display = 'none'}
+};
+
+
 const spanPlayer = document.getElementById('spanPlayer');
 const spanAge = document.getElementById('spanAge');
 const spanFac = document.getElementById('spanFac');
@@ -58,6 +71,8 @@ const tHMod = document.getElementById('tec-hab-mod');
 const cool = document.getElementById('cool');
 const coolMod = document.getElementById('cool-mod');
 
+const body = document.querySelector('body')
+
 
 
 
@@ -67,6 +82,8 @@ const resetar = function() {
     localStorage.clear();
     window.location = 'index.html'
 };
+
+
 
 const handleSubmit = (event) => {
     event.preventDefault();
@@ -85,19 +102,11 @@ const handleSubmit = (event) => {
     localStorage.setItem('cool1', cool.value);
     localStorage.setItem('cool2', coolMod.value);
     
-
-
-
     localStorage.setItem('strTotal', calcStr());
-    
     localStorage.setItem('agilTotal', calcAgil());
-    
     localStorage.setItem('intTotal', calcInt());
-  
     localStorage.setItem('tecHabTotal', calcTH());
-   
     localStorage.setItem('coolTotal', calcCool());
-
 
     var cortexText = cortex.options[cortex.selectedIndex].text;
     localStorage.setItem('cortexS', cortexText);
@@ -122,16 +131,12 @@ const handleSubmit = (event) => {
 
     var pernasTxt = pernas.options[pernas.selectedIndex].text;
     localStorage.setItem('pernasT', pernasTxt);
-
-
-    //---INVENTORY---//
-
+    
 };
     
-   
 form.addEventListener('reset', resetar);
-
 form.addEventListener('submit', handleSubmit);
+window.addEventListener('click', cyberdeckdiv)
 
 window.onload = () => {
     const playerName = localStorage.getItem('player');
@@ -171,5 +176,5 @@ window.onload = () => {
     spanAge.innerHTML = playerAge;
     spanFac.innerHTML = playerFac;
 
-};
-
+    cyberdeckdiv();
+}
