@@ -89,19 +89,14 @@ const handleSubmit = (event) => {
 
 
     localStorage.setItem('strTotal', calcStr());
-    //document.getElementById('force-total').innerHTML = localStorage.getItem('strTotal');
-
+    
     localStorage.setItem('agilTotal', calcAgil());
-    //document.getElementById('agil-total').innerHTML = localStorage.getItem('agilTotal');
-
+    
     localStorage.setItem('intTotal', calcInt());
-  //  document.getElementById('int-total').innerHTML = localStorage.getItem('intTotal');
-
+  
     localStorage.setItem('tecHabTotal', calcTH());
-   // document.getElementById('tec-hab-total').innerHTML = localStorage.getItem('tecHabTotal');
-
+   
     localStorage.setItem('coolTotal', calcCool());
-   // document.getElementById('cool-total').innerHTML = localStorage.getItem('coolTotal');
 
 
     var cortexText = cortex.options[cortex.selectedIndex].text;
