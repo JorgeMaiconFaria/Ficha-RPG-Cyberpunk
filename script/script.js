@@ -29,16 +29,26 @@ function calcCool() {
     document.getElementById('cool-total').innerHTML = Math.floor((parseInt(cool) + parseInt(coolMod)));
     return Math.floor((parseInt(cool) + parseInt(coolMod)));};
 
-
-    
-//let cyberdeck = document.getElementById('cyberdeck')
-
 function cyberdeckdiv(){
     const intTotal = document.getElementById('int-total').innerHTML
     let cyberdeck = document.getElementById('cyberdeck')
     if (intTotal >= 3) {
         cyberdeck.style.display = 'block'
-    } else {cyberdeck.style.display = 'none'}
+    } else {cyberdeck.style.display = 'none'}};
+
+function calcRam(){
+    var intTotal = document.getElementById('int-total').innerHTML;
+    document.getElementById('ram-total').innerHTML = Math.floor((parseInt(intTotal) * 1.5))
+    return Math.floor((parseInt(intTotal) * 1.5));
+};
+
+
+function addRam(){
+
+};
+
+function removeRam(){
+
 };
 
 
@@ -56,6 +66,13 @@ const mao = document.getElementById('mao');
 const braco = document.getElementById('braços');
 const pernas = document.getElementById('pernas');
 
+const hack1 = document.getElementById('hack1');
+const hack2 = document.getElementById('hack2');
+const hack3 = document.getElementById('hack3');
+
+const ramAtual = document.getElementById('ram-atual');
+const ramTotal = document.getElementById('ram-total');
+
 const imputPrimaria = document.querySelector('#primaria');
 const imputSecundaria = document.querySelector('#secundaria');
 const imputmochila = document.getElementById('mochila');
@@ -71,7 +88,7 @@ const tHMod = document.getElementById('tec-hab-mod');
 const cool = document.getElementById('cool');
 const coolMod = document.getElementById('cool-mod');
 
-const body = document.querySelector('body')
+//const body = document.querySelector('body')
 
 
 
@@ -101,6 +118,9 @@ const handleSubmit = (event) => {
     localStorage.setItem('tH2', tHMod.value);
     localStorage.setItem('cool1', cool.value);
     localStorage.setItem('cool2', coolMod.value);
+    localStorage.setItem('hack1', hack1.value);
+    localStorage.setItem('hack2', hack2.value);
+    localStorage.setItem('hack3', hack3.value);
     
     localStorage.setItem('strTotal', calcStr());
     localStorage.setItem('agilTotal', calcAgil());
@@ -131,12 +151,14 @@ const handleSubmit = (event) => {
 
     var pernasTxt = pernas.options[pernas.selectedIndex].text;
     localStorage.setItem('pernasT', pernasTxt);
-    
+
 };
     
 form.addEventListener('reset', resetar);
 form.addEventListener('submit', handleSubmit);
 window.addEventListener('click', cyberdeckdiv)
+window.addEventListener('click', calcRam)
+
 
 window.onload = () => {
     const playerName = localStorage.getItem('player');
@@ -171,10 +193,14 @@ window.onload = () => {
     document.querySelector('#tec-hab-mod').value = localStorage.getItem('tH2');
     document.querySelector('#cool').value = localStorage.getItem('cool1');
     document.querySelector('#cool-mod').value = localStorage.getItem('cool2');
+    document.querySelector('#hack1').value = localStorage.getItem('hack1');
+    document.querySelector('#hack2').value = localStorage.getItem('hack2');
+    document.querySelector('#hack3').value = localStorage.getItem('hack3');
 
     spanPlayer.innerHTML = playerName;
     spanAge.innerHTML = playerAge;
     spanFac.innerHTML = playerFac;
 
     cyberdeckdiv();
+    calcRam();
 }
