@@ -24,14 +24,14 @@ font-size: clamp(18px, 5vw, 1rem);}
 .personal input {font-size: clamp(18px, 5vw, 1rem);}
 
 #cyberdeck{display: none;
-  position: relative;
+  box-sizing: border-box;
   line-height: 2;
   font-size: clamp(18px, 5vw, 1rem);
   font-weight: bold;}
 
 #hack1, #hack2, #hack3{font-size: clamp(18px, 5vw, 1rem);}
 
-#ram{width: 100vw;
+#ram{width: 99vw;
   height: 15vw;
   box-sizing: content-box;
   margin: 0 auto;

@@ -1,4 +1,4 @@
-/*---ATTRIBUTES TABLE'S SUM SCRIPT*/
+/*--- ATTRIBUTES TABLE'S SUM SCRIPT ---*/
 function calcStr() {
     var str = document.getElementById('force').value;
     var strMod = document.getElementById('force-mod').value;
@@ -33,25 +33,43 @@ function cyberdeckdiv(){
     const intTotal = document.getElementById('int-total').innerHTML
     let cyberdeck = document.getElementById('cyberdeck')
     if (intTotal >= 3) {
-        cyberdeck.style.display = 'block'
+        cyberdeck.style.display = 'inline-block'
     } else {cyberdeck.style.display = 'none'}};
+
+/*--- MEMORY RAM ATTRIBUTES AND VALUES SCRIPTS ---*/
 
 function calcRam(){
     var intTotal = document.getElementById('int-total').innerHTML;
     document.getElementById('ram-total').innerHTML = Math.floor((parseInt(intTotal) * 1.5))
-    return Math.floor((parseInt(intTotal) * 1.5));
+    let totalRam = Math.floor((parseInt(intTotal) * 1.5));
+    return totalRam;
 };
 
-
-function addRam(){
-
-};
+let count = 0;
 
 function removeRam(){
+    let ramAtual = parseInt(document.getElementById('ram-atual').innerHTML);
+    let ramTotal = parseInt(document.getElementById('ram-total').innerHTML);
+    if (ramAtual >= 1){count--}
+    document.getElementById('ram-atual').innerHTML = count;
+}
 
+function addRam(){
+    let ramAtual = parseInt(document.getElementById('ram-atual').innerHTML);
+    let ramTotal = parseInt(document.getElementById('ram-total').innerHTML);
+    if(ramAtual <= (ramTotal - 1)){count++}
+    document.getElementById('ram-atual').innerHTML = count;
 };
 
+let btnUpRam = document.getElementById('crescer')
+let btnDownRam = document.getElementById('descer')
 
+btnUpRam.addEventListener('release', addRam);
+btnDownRam.addEventListener('release', removeRam)
+
+
+
+/*--- DOM ELEMENTS---*/
 const spanPlayer = document.getElementById('spanPlayer');
 const spanAge = document.getElementById('spanAge');
 const spanFac = document.getElementById('spanFac');
@@ -88,19 +106,12 @@ const tHMod = document.getElementById('tec-hab-mod');
 const cool = document.getElementById('cool');
 const coolMod = document.getElementById('cool-mod');
 
-//const body = document.querySelector('body')
-
-
-
-
 /*---LOCAL STORAGE SCRIPTS */
 
 const resetar = function() {
     localStorage.clear();
     window.location = 'index.html'
 };
-
-
 
 const handleSubmit = (event) => {
     event.preventDefault();
@@ -154,11 +165,14 @@ const handleSubmit = (event) => {
 
 };
     
+/*--- OTHER BUTTONS ---*/
+
 form.addEventListener('reset', resetar);
 form.addEventListener('submit', handleSubmit);
 window.addEventListener('click', cyberdeckdiv)
 window.addEventListener('click', calcRam)
 
+/*--- ALL FUNCTIONS REQUIRES TO RELOAD THE PAGE ---*/
 
 window.onload = () => {
     const playerName = localStorage.getItem('player');
