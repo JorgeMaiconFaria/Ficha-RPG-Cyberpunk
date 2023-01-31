@@ -109,8 +109,10 @@ const coolMod = document.getElementById('cool-mod');
 /*---LOCAL STORAGE SCRIPTS */
 
 const resetar = function() {
+    let text = "Deseja apagar a sua ficha?\nNão é possivel desfazer a ação!";
+    if (confirm(text) == true) {
     localStorage.clear();
-    window.location = 'index.html'
+    window.location = 'index.html'}
 };
 
 const handleSubmit = (event) => {
