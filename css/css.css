@@ -9,13 +9,17 @@
 /*---BODY AND BACKGROUND---*/
 
 body{padding: 1%;
-  background-image: 
-  
+background-color: #311114;
+color: #0BC4CF;}
+/*
+----First Version(v1.0)----
+background-image:  
 linear-gradient(  rgba(233, 104, 104, 0.45), 
                   rgba(236, 110, 110, 0.45)),
 url(../img/cyber.gif); background-repeat:repeat;
 background-position: center;
-background-size: cover;}
+background-size: cover;}*/
+
 
 .personal {line-height: 2;
 font-weight: bold;
@@ -50,19 +54,45 @@ font-style: italic;
 text-transform: uppercase;}
 ::placeholder{color: black;}
 
-hr{border-color: #0BC4CF;}
+hr{border-color: #fa2b5b;/*----First Version(v1.0)----#0BC4CF;*/}
 
 h1{text-align: center;
 font-weight: bold;
 color: red;
-font-size: clamp(35px, 5vw, 1rem);}
+font-size: clamp(35px, 5vw, 1rem);
+text-shadow:  0 0 5px #f38282,
+              0 0 7px #f07e7e,
+              0 0 10px #f00,
+              0 0 21px #f00,
+              0 0 42px #311114,
+              0 0 82px 	#311114,
+              0 0 92px 	#311114,
+              0 0 102px 	#311114,
+              0 0 151px 	#311114;}
 
 h2{text-align: center;
 color: red;
-font-size: clamp(30px, 5vw, 1rem);}
+font-size: clamp(30px, 5vw, 1rem);
+text-shadow:  0 0 7px #f00,
+              0 0 10px #f00,
+              0 0 21px #f00,
+              0 0 42px #311114,
+              0 0 82px 	#311114,
+              0 0 92px 	#311114,
+              0 0 102px 	#311114,
+              0 0 151px 	#311114;}
 
-h3{color: red;
-font-size: clamp(30px, 5vw, 1rem);}
+h3{color: #ff0000;
+font-size: clamp(30px, 5vw, 1rem);
+text-shadow:  0 0 5px #f38282,
+              0 0 7px #f07e7e,
+              0 0 10px #f00,
+              0 0 21px #f00,
+              0 0 42px #311114,
+              0 0 82px 	#311114,
+              0 0 92px 	#311114,
+              0 0 102px 	#311114,
+              0 0 151px 	#311114;}
 
 h5{text-align: center;
   font-size: clamp(25px, 5vw, 1rem);
