@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/css.css">
     <link rel="icon" href="img/icon_2b70782ce088dc25524782048a2c0d9f.ico">
-    <script defer src="script/script.js"></script>
+    <script defer src="script/script.js" defer></script>
     <title>Departamento de Polícia de Night City</title>
 </head>
 <body>
 
 <!--Character's Pernonal Date-->
 
-<section class="personal"><h1>Dados Pessoais</h1>
+<section class="personal"><h1 onclick="easterEgg()">Dados Pessoais</h1>
     <br>
     
         <label>Nome: </label>
@@ -166,9 +166,9 @@
     <br><h5>MEMÓRIA RAM</h5>
 
 <div id="ram">
-    <button id="descer" onclick="removeRam()">Descer</button>
+    <button id="descer" type="button" onclick="removeRam(); clickSound.play(2)" >Descer</button>
     <span id="ram-atual">0</span><span id="marker">/</span><span id="ram-total">0</span>
-    <button id="crescer" onclick="addRam()">Subir</button>
+    <button id="crescer" type="button" onclick="addRam(); clickSound.play(2)" >Subir</button>
 </div>
     <br>
     
@@ -190,8 +190,8 @@
 </div>
 
 <div class="btns">
-    <button class="reset" type="reset">Reiniciar Cadastro</button>
-    <button class="ok" type="submit">Enviar Cadastro</button>
+    <button class="reset" type="reset" >Reiniciar Cadastro</button>
+    <button id="ok" type="submit">Enviar Cadastro</button>
 </div>
 </form>
 </body>

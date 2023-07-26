@@ -66,6 +66,23 @@ const handleSubmit = (event) => {
     window.location = 'sheet.html'
 }
 
+/*function setLogin(){
+    localStorage.setItem('player', inputName.value);
+    localStorage.setItem('age', inputAge.value);
+    localStorage.setItem('fac', inputFac.value);
+    window.location = 'sheet.html'
+}*/
 
+let loginSound = new Audio()
+loginSound.src = "./souds/login-sound.mp3"
 
-form.addEventListener('submit', handleSubmit);
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    loginSound.play()
+    setTimeout(()=> {
+        localStorage.setItem('player', inputName.value);
+        localStorage.setItem('age', inputAge.value);
+        localStorage.setItem('fac', inputFac.value);
+        window.location = 'sheet.html'
+        console.log("testes")}, 1600)
+});

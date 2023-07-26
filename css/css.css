@@ -96,7 +96,16 @@ text-shadow:  0 0 5px #f38282,
 
 h5{text-align: center;
   font-size: clamp(25px, 5vw, 1rem);
-  color: #0BC4CF;}
+  color: #0BC4CF;
+  text-shadow:  0 0 5px #0BC4CF,
+                0 0 7px #0BC4CF,
+                0 0 10px #0BC4CF,
+                0 0 21px #0BC4CF,
+                0 0 42px #0BC4CF,
+                0 0 82px 	#0BC4CF,
+                0 0 92px 	#0BC4CF,
+                0 0 102px 	#0BC4CF,
+                0 0 130px 	#0BC4CF;}
 
 input{border-color: #0BC4CF;}
 
@@ -182,12 +191,12 @@ textarea:focus {
 
 .btn{position:fixed}
 
-.ok {
+#ok {
     width: 9rem;
     height: 3rem;
     border: solid .10rem black;
     outline: none;
-    background-color: rgba(115, 255, 254, 0.5);
+    background-color: rgb(115, 255, 254);
     cursor: pointer;
     position: relative;
     float: right;
@@ -198,7 +207,7 @@ textarea:focus {
     clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
   }
   
-  .ok__content {
+  #ok__content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -216,7 +225,7 @@ textarea:focus {
     height: 3rem;
     border: solid .10rem black;
     outline: none;
-    background-color: rgba(255, 0, 60, 0.5);
+    background-color: rgb(255, 0, 60);
     cursor: pointer;
     position: relative;
     font-family: Tomorrow, sans-serif;

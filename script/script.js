@@ -61,11 +61,21 @@ function addRam(){
     document.getElementById('ram-atual').innerHTML = count;
 };
 
-let btnUpRam = document.getElementById('crescer')
-let btnDownRam = document.getElementById('descer')
+let btnUpRam = document.querySelector('#crescer')
+let btnDownRam = document.querySelector('#descer')
 
-btnUpRam.addEventListener('release', addRam);
-btnDownRam.addEventListener('release', removeRam)
+let sound = new Audio();
+let clickSound = new Audio();
+let tapaSound = new Audio();
+sound.src = "./souds/sound1.mp3"
+clickSound.src = "./souds/click.mp3"
+tapaSound.src = "./souds/um-tapa.mp3"
+
+
+//btnUpRam.addEventListener('click', );
+//btnDownRam.addEventListener('click', );
+
+
 
 
 
@@ -74,6 +84,7 @@ const spanPlayer = document.getElementById('spanPlayer');
 const spanAge = document.getElementById('spanAge');
 const spanFac = document.getElementById('spanFac');
 const form = document.getElementById('form-status');
+const h1 = document.querySelector('h1');
 
 const cortex = document.getElementById('cortex');
 const sisVisual = document.getElementById('sistema-visual');
@@ -108,6 +119,25 @@ const coolMod = document.getElementById('cool-mod');
 
 /*---LOCAL STORAGE SCRIPTS */
 
+
+function playsound(option) {
+    if (option == "1") 
+     {sound.play()}
+   else if(option == "2") 
+     {clickSound.play()}
+     else if(option == "3")
+     {tapaSound.play()}  
+};
+
+let countTapas = 0;
+function easterEgg(){
+    countTapas += 1
+    if(countTapas == 77)
+    { playsound(3)}
+}
+
+
+
 const resetar = function() {
     let text = "Deseja apagar a sua ficha?\nNão é possivel desfazer a ação!";
     if (confirm(text) == true) {
@@ -117,7 +147,7 @@ const resetar = function() {
 
 const handleSubmit = (event) => {
     event.preventDefault();
-
+    playsound("1");
     localStorage.setItem('prima', imputPrimaria.value);
     localStorage.setItem('second', imputSecundaria.value);
     localStorage.setItem('mochila', imputmochila.value);    
@@ -143,7 +173,7 @@ const handleSubmit = (event) => {
 
     var cortexText = cortex.options[cortex.selectedIndex].text;
     localStorage.setItem('cortexS', cortexText);
-
+    
     var sisVisualTxt = sisVisual.options[sisVisual.selectedIndex].text;
     localStorage.setItem('visual', sisVisualTxt);
 
@@ -158,7 +188,7 @@ const handleSubmit = (event) => {
 
     var maoTxt = mao.options[mao.selectedIndex].text;
     localStorage.setItem('mao', maoTxt);
-    
+
     var braçosTxt = braco.options[braco.selectedIndex].text;
     localStorage.setItem('braços', braçosTxt);
 
@@ -168,7 +198,6 @@ const handleSubmit = (event) => {
 };
     
 /*--- OTHER BUTTONS ---*/
-
 form.addEventListener('reset', resetar);
 form.addEventListener('submit', handleSubmit);
 window.addEventListener('click', cyberdeckdiv)
