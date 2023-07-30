@@ -132,7 +132,7 @@ function playsound(option) {
 let countTapas = 0;
 function easterEgg(){
     countTapas += 1
-    if(countTapas == 77)
+    if(countTapas == 7 || countTapas == 77)
     { playsound(3)}
 }
 
