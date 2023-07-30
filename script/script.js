@@ -72,13 +72,6 @@ clickSound.src = "./souds/click.mp3"
 tapaSound.src = "./souds/um-tapa.mp3"
 
 
-//btnUpRam.addEventListener('click', );
-//btnDownRam.addEventListener('click', );
-
-
-
-
-
 /*--- DOM ELEMENTS---*/
 const spanPlayer = document.getElementById('spanPlayer');
 const spanAge = document.getElementById('spanAge');
