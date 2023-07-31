@@ -32,7 +32,7 @@ function calcCool() {
 function cyberdeckdiv(){
     const intTotal = document.getElementById('int-total').innerHTML
     let cyberdeck = document.getElementById('cyberdeck')
-    if (intTotal >= 3) {
+    if (intTotal >= 8) {
         cyberdeck.style.display = 'inline-block'
     } else {cyberdeck.style.display = 'none'}};
 
